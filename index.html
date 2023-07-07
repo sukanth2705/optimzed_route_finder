@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rote Finder</title>
+    <meta charset="utf-8" />
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bc33b847f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="map">
+        <div class="middle">
+            <div class="temp">
+                <div class="locations">
+                    <div class="start">PIN LOCATION</div>
+                    <div class="destinationlist">
+                        <p>ADD LOCATION</p>
+                    </div>
+                </div>
+                <div class="dummy">
+                    <button class="add">ADD</button>
+                    <button class="calculate">FIND</button>
+                </div>
+            </div>
+            <div class="container">
+                <input type="text" class="search" />
+                <button class="pin">PIN</button>
+            </div>
+        </div>
+        <div id="myMap" style="position:relative;width:100%;height: 100%;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
